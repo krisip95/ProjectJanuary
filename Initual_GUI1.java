@@ -42,7 +42,7 @@ public class Initual_GUI1 {
         frame.setLayout(null);
         frame.setSize(600, 400);
         setLocationRelativeTo(null);
-        frame.setTitle("Order");
+        frame.setTitle("NEO zone");
         labelSize = new JLabel("Select size:");
         labelSize.setForeground(Color.green);
         labelSize.setSize(250, 50);
