@@ -1,13 +1,15 @@
 package guiver1;
 
+import java.awt.Component;
+
 import javax.swing.JOptionPane;
 
 public class Tea1_GUI extends Order1_GUI {
 	private boolean sugar;
 
-	public Tea1_GUI(String size,int amount,Initual_GUI1 label) {
+	public Tea1_GUI(String size,int amount,Component parent) {
 		super(size,amount);
-		if(JOptionPane.showConfirmDialog(label, "Would you like sugar?","Sugar",JOptionPane.YES_NO_OPTION)==0) sugar=true;
+		if(JOptionPane.showConfirmDialog(parent, "Would you like sugar?","Sugar",JOptionPane.YES_NO_OPTION)==0) sugar=true;
 		else sugar=false;
 		double price;
 		if(size.equals("Small")) price=3.0;
